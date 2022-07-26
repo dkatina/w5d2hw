@@ -17,7 +17,6 @@
 -- DROP TABLE IF EXISTS movie CASCADE;
 -- CREATE TABLE movie(
 --     id SERIAL PRIMARY KEY,
---     theater_id INTEGER,
 --     movie_title VARCHAR(20) NOT NULL,
 --     descrip TEXT NOT NULL,
 --     FOREIGN KEY (theater_id) REFERENCES theatre(id) ON DELETE CASCADE
@@ -46,4 +45,12 @@
 --     customer_id INTEGER,
 --     FOREIGN KEY (movie_id) REFERENCES movie(id) ON DELETE CASCADE,
 --     FOREIGN KEY (customer_id) REFERENCES customer(id) ON DELETE CASCADE
+-- );
+
+-- DROP TABLE IF EXISTS movie_theatre CASCADE;
+-- CREATE TABLE movie_theatre(
+--     movie_id INTEGER,
+--     theatre_id INTEGER,
+--     FOREIGN KEY (movie_id) REFERENCES movie(id) ON DELETE CASCADE,
+--     FOREIGN KEY (theatre_id) REFERENCES theatre(id) ON DELETE CASCADE
 -- );

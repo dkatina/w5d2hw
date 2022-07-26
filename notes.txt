@@ -1,6 +1,5 @@
 customer
 ticket
-inventory
 concession(item)
 movie
 purchase (customer- concession)
