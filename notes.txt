@@ -1,0 +1,11 @@
+customer
+ticket
+inventory
+concession(item)
+movie
+purchase (customer- concession)
+
+cutomer <-> ticket 1:1 I guess 1 customer could buy multiple tickets? so maybe 1:many?
+customer <-> concession many:many many different customers can buy multiple concession items
+ticket <-> movie many:1     many ticket_id for one movie
+inventory <-> concession many:1 1 item can exist many times in an inventory
