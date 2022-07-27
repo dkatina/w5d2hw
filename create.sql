@@ -19,7 +19,7 @@
 --     id SERIAL PRIMARY KEY,
 --     movie_title VARCHAR(20) NOT NULL,
 --     descrip TEXT NOT NULL,
---     FOREIGN KEY (theater_id) REFERENCES theatre(id) ON DELETE CASCADE
+--     price DECIMAL(4,2) NOT NULL
 -- );
 
 -- DROP TABLE IF EXISTS concession CASCADE;
